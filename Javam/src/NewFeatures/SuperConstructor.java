@@ -5,6 +5,12 @@ public class SuperConstructor {
 		Animal a = new  Animal(8);
 		System.out.println(a);
 		System.out.println(a.getAge());
+		Zebra z = new Zebra(4);
+		System.out.println(z);
+		Animal an = new Zebra(10);
+		System.out.println(an);
+		Animal anim = new Zebra();
+		System.out.println(anim);
 	}
 }
 
@@ -20,7 +26,21 @@ class Animal{
 	}
 	@Override
 	public String toString() {
-		return "age = 8";
+		return "Animal age = 8";
+	}
+}
+class Zebra extends Animal{
+
+	public Zebra(int age) {
+		super(age);
+	}
+	public Zebra() {
+		this(14);
+	}
+	@Override
+	public String toString() {
+		return "Zebra age = " + getAge();
 	}
 	
 }
+	
