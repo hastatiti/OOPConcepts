@@ -8,7 +8,13 @@ public abstract class MyAbstract {
 	}
 }
 
-class Bird extends MyAbstract { // needs to implement abstract method
+class Bird extends MyAbstract {
+
+	@Override
+	public String getName() {
+		// TODO Auto-generated method stub
+		return null;
+	} // needs to implement abstract method
 }
 	class Flamingo extends Bird { //this class runs
 		public String getName() {
