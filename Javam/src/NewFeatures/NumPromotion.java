@@ -11,5 +11,8 @@ public class NumPromotion {
 		System.out.println("///////");
 		System.out.println(d+a);
 		System.out.println(f+a);
+		System.out.println("///////");
+		int i = 1;
+		System.out.println(i+  " " +i);
 	}
 }
