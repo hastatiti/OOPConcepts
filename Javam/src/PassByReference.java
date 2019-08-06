@@ -11,7 +11,8 @@ public class PassByReference {
 	public static void main(String[] args) {
 		int number = 1;
 		String letters = "abc";
-		number(number);
+		number(number); // number is still 1
+		number = number(number); // number is 2 now, reassigned
 		letters = letters(letters);//doesnt reassign String => abc
 		letters(letters);// does reassign String => abcd
 		System.out.println(number + " " + letters); 

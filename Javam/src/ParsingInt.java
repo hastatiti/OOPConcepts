@@ -1,4 +1,4 @@
-package NewFeatures;
+
 
 public class ParsingInt {
 	
