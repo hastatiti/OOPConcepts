@@ -7,5 +7,6 @@ public class ArraySize {
 		vars2 = new int[2][3][2];
 		System.out.println(vars1.length);
 		System.out.println(vars2.length);
+		
 	}
 }
