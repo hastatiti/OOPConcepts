@@ -2,7 +2,6 @@ import java.util.ArrayList;
 import java.util.*;
 
 public class Initilization {
-	
 	static List<Integer> l = new ArrayList();
 	static{
 		l.add(null);
