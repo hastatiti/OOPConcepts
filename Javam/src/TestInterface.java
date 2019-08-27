@@ -12,8 +12,8 @@ interface MyInterface2
 { 
     public void square(int a); 
   
-//    default void show() 
-//    { System.out.println("Default Method Executed"); } 
+    default void show() 
+    { System.out.println("Default Method Executed"); } 
 } 
 
 public class TestInterface implements MyInterface ,MyInterface2
@@ -21,9 +21,9 @@ public class TestInterface implements MyInterface ,MyInterface2
     public void square(int a) 
     { System.out.println(a*a); } 
     
-//    public void show() {
-//    	System.out.println("Child default implementation");
-//    }
+    public void show() {
+    	System.out.println("Child default implementation");
+    }
   
     public static void main(String args[]) 
     { 
