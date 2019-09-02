@@ -9,5 +9,6 @@ public class LambdaExample {
 //		for (String n : features) { System.out.println(n); }
 	//	features.forEach( n -> System.out.println(n));
 		features.forEach((String n) -> System.out.println(n));
+		
 	}
 }
