@@ -10,11 +10,15 @@ public class ListIntoArray {
 		myList.add(3);
 		int [] intArray = new int[myList.size()];
 		
-		for(int i = 0; i < myList.size(); i++) {
-			
-			intArray[i] = myList.get(i);
-			System.out.println(Arrays.toString(intArray));
-		}
+		Integer [] myArray = myList.toArray(new Integer[0]); //?????????
+		System.out.println(myArray.length);
+		System.out.println(Arrays.toString(myArray));
+
+		//		for(int i = 0; i < myList.size(); i++) {
+//			
+//			intArray[i] = myList.get(i);
+//			System.out.println(Arrays.toString(intArray));
+//		}
 		
 		//null pointer exeption,assigns intArray[1] to 1,then intArray[2] to 2
 //		for(int i : myList) {
